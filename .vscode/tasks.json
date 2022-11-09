@@ -9,6 +9,7 @@
                 "-g",
                 "-I..",
                 "-L..",
+                "-gdwarf-2",
                 "${file}",
                 "-o",
                 "${fileDirname}/libco-test-64",

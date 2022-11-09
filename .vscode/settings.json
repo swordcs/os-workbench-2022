@@ -1,5 +1,8 @@
 {
     "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
         "clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling"
-    ]
+    ],
+    "files.associations": {
+        "setjmp.h": "c"
+    }
 }
