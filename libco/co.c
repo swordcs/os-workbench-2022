@@ -174,10 +174,7 @@ void co_yield ()
   if (!status)
   {
     // 此时开始查找待选中的进程，因为co_node应该指向的就是current对应的节点，因此首先向下移动一个，使当前线程优先级最低
-    for (int i = 0; i < rand() % 9; i++)
-    {
-      co_node = co_node->bk;
-    }
+    co_node = co_node->bk; 
     while (!((current = co_node->coroutine)->status == CO_NEW || current->status == CO_RUNNING))
     {
       co_node = co_node->bk;
